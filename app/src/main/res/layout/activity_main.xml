@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devix.app_calcularimc.MainActivity">
+
+    <TextView
+        android:id="@+id/txtPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Peso"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edtPeso"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtPeso"
+        android:layout_margin="10dp"
+        android:background="#6aea9e9e"
+        android:hint="Ingresa tu peso"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtEstatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPeso"
+        android:layout_margin="10dp"
+        android:text="Estatura"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edtEstatura"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtEstatura"
+        android:layout_margin="10dp"
+        android:background="#6aea9e9e"
+        android:hint="Ingresa tu estatura"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/edtEstatura"
+        android:layout_margin="10dp"
+        android:text="Calcular"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+</RelativeLayout>
